@@ -22,7 +22,7 @@ FROM nginx:alpine
 # Copy the built Angular app from the previous stage into the NGINX server
 COPY --from=0 /app/dist/* /usr/share/nginx/html/
  
-# Expose the port on which the NGINX server will run
+# Expose the port on which the NGINX server will run on
 EXPOSE 80
  
 # Start NGINX to serve the Angular app when the container runs
